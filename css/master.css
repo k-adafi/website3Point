@@ -1,0 +1,88 @@
+body {
+    background-color: #c5c5c5;
+    color: black;
+}
+
+
+.gradient-border {
+    border-radius: 50%;
+    box-shadow: 0 15px 40px #3096e9, 0 10px 20px #9ecf44;
+}
+
+
+
+.hidden {
+    opacity: 0;
+}
+.visible {
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+@keyframes floatIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.float-in {
+    animation: floatIn 1s forwards;
+}
+
+
+
+.card-circle {
+    overflow: hidden; /* Empêche l'image de dépasser le conteneur */
+}
+
+.zoom {
+    transition: transform 0.2s; /* Animation */
+  }
+  
+.zoom:hover {
+    transform: scale(1.1); /* Zoom de 110% */
+}
+
+#icon{
+    cursor: pointer;
+}
+
+.navbar {
+    background-color: #ffffff;
+}
+
+/* master.css dark mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.navbar.dark-mode {
+    background-color: #333333;
+}
+
+.nav-link.dark-mode {
+    color: #ffffff;
+}
+
+.carousel.dark-mode{
+    background-color: #121212;
+}
+
+.carousel-item.dark-mode{
+    color: #ffffff;
+}
+
+.card.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.btn-outline-primary.dark-mode {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
