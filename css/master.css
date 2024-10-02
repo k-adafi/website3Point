@@ -32,7 +32,26 @@ body {
     animation: floatIn 1s forwards;
 }
 
+#myName{
+    color: #1A69B1;
+}
 
+#myName.dark-mode{
+    color: #E9505B;
+}
+
+
+.titre_sect{
+    color: #1A69B1;
+}
+
+.titre_sect.dark-mode{
+    color: #E9505B;
+}
+
+.separator{
+    color: #66A630;
+}
 
 .card-circle {
     overflow: hidden; /* Empêche l'image de dépasser le conteneur */
@@ -53,6 +72,7 @@ body {
 .navbar {
     background-color: #ffffff;
 }
+
 
 /* master.css dark mode */
 body.dark-mode {

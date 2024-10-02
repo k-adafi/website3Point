@@ -41,28 +41,35 @@ window.addEventListener('load', function() {
     document.getElementById('myskill2').addEventListener('mouseout', resumeAnimations);
 });
 
-
+let logo = document.getElementById("logoP")
 let icon = document.getElementById("icon");
 let body = document.getElementById("body");
+let phasebienvenu = document.getElementById('myName');
 let cards = document.querySelectorAll(".card");
 let buttons = document.querySelectorAll(".btn-outline-primary");
 let navbar = document.querySelector(".navbar");
 let navLinks = document.querySelectorAll(".nav-link");
 let carousel = document.querySelector(".carousel");
 let carouselitem = document.querySelectorAll(".carousel-item");
+let titre_sect = document.querySelector(".titre_sect");
+
 
 icon.onclick = function() {
     body.classList.toggle("dark-mode");
     cards.forEach(card => card.classList.toggle("dark-mode"));
+    phasebienvenu.classList.toggle("dark-mode");
+    titre_sect.classList.toggle("dark-mode");
     buttons.forEach(button => button.classList.toggle("dark-mode"));
     navbar.classList.toggle("dark-mode");
     navLinks.forEach(link => link.classList.toggle("dark-mode"));
     carousel.classList.toggle("dark-mode");
-    carouselitem.forEach(link => link.classList.toggle("dark-mode"));
+    carouselitem.classList.toggle("dark-mode");
     if (body.classList.contains("dark-mode")) {
         icon.src = "images/sunny.png";
+        logo.src = "images/logoP1.png";
     } else {
         icon.src = "images/half-moon.png";
+        logo.src = "images/logoP.png";
     }
 }
 
