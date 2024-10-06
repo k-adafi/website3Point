@@ -1,6 +1,69 @@
 body {
-    background-color: #c5c5c5;
+    background-color: #ffffff;
     color: black;
+}
+
+/* #c5c5c5; */
+
+.carousel-inner{
+    height: 30mm; /* 6 cm */
+   /*  object-fit: cover; Pour s'assurer que l'image couvre toute la hauteur sans déformation */
+}
+.carousel-item {
+    height: 30mm; /* 6 cm */
+}
+
+/* Elément de carousel */
+#services1{
+    color: #1A69B1;
+}
+#services2{
+    color: #1A69B1;
+}
+#services3{
+    color: #1A69B1;
+}
+#services4{
+    color: #1A69B1;
+}
+
+#services1.dark-mode{
+    color: #E9505B;
+}
+#services2.dark-mode{
+    color: #E9505B;
+}
+#services3.dark-mode{
+    color: #E9505B;
+}
+#services4.dark-mode{
+    color: #E9505B;
+}
+
+#expService1.dark-mode{
+    color: #ffffff;
+}
+#expService2.dark-mode{
+    color: #ffffff;
+}
+#expService3.dark-mode{
+    color: #ffffff;
+}
+#expService4.dark-mode{
+    color: #ffffff;
+}
+
+#previous1.dark-mode{
+    color: #ffffff;
+}
+#previous2.dark-mode{
+    color: #ffffff;
+}
+#next1.dark-mode{
+    color: #ffffff;
+}
+#next2.dark-mode{
+    color: #ffffff;
 }
 
 
@@ -54,7 +117,8 @@ body {
 }
 
 .card-circle {
-    overflow: hidden; /* Empêche l'image de dépasser le conteneur */
+    overflow: hidden;
+    background-color: #c5c5c5; /* Empêche l'image de dépasser le conteneur */
 }
 
 .zoom {
@@ -70,7 +134,7 @@ body {
 }
 
 .navbar {
-    background-color: #ffffff;
+    background-color: transparent;
 }
 
 
@@ -81,7 +145,7 @@ body.dark-mode {
 }
 
 .navbar.dark-mode {
-    background-color: #333333;
+    background-color: transparent;
 }
 
 .nav-link.dark-mode {

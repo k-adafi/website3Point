@@ -9,22 +9,26 @@
     <meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
     <!-- CSS Stylesheets -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    
+
     <link rel="stylesheet" href="css/master.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <!--  <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    -->    
     <title>3-points</title>
 </head>
 
 <body id="body">
     <section class="menu">
-        <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="light">
+        <nav class="navbar navbar-expand-lg" data-bs-theme="light">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarColor03">
-                    <img src="images/logoP.png" width="100" id="logoP" class="rounded-circle" alt="logo">
+                    <img src="images/logoP.png" width="200" id="logoP" class="rounded-circle" alt="logo">
                     <ul class="navbar-nav ms-auto me-5">
                         <li class="nav-item">
                             <a class="nav-link fw-bold" href="#infoPerso">Acceuil
@@ -59,8 +63,15 @@
     </section>
     
     <section id="infoPoint" class="container">
-        <div class="row pt-5 mt-5">
-            <div class="col-6">
+        <div class="col">
+            <div class="row-6">
+                <h1 id="myName" class="mt-1 fw-bold hidden"> Bienvenu, welcome chez 3-POINTS</h1>
+                <h3 id="myskill1" class="mt-1 fw-bold hidden">Votre parténaire digitale</h3>
+                <p id="myskill2" class="text-justify hidden">
+                    Notre priorité c'est votre satisfactions.
+                </p>
+            </div>
+            <div class="row">
                 <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="3000">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -69,44 +80,43 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="2000">
-                            <img src="images/code.jpg" class="d-block w-100" alt="...">
+                            <!-- <img src="images/code.jpg" class="d-block w-100" alt="...">-->
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
+                                <h5 id="services1">Développement d'application web</h5>
+                                <p id="expService1">Explication......</p>
                             </div>
                         </div>
                         <div class="carousel-item" data-bs-interval="2000">
-                            <img src="images/code.jpg" class="d-block w-100" alt="...">
+                            <!-- <img src="images/img_3.jpg" class="d-block w-100" alt="...">-->
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
+                                <h5 id="services2">Développement d'application de bureau</h5>
+                                <p id="expService2">Explication......</p>
                             </div>
                         </div>
                         <div class="carousel-item" data-bs-interval="2000">
-                            <img src="images/code.jpg" class="d-block w-100" alt="...">
+                            <!-- <img src="images/code.jpg" class="d-block w-100" alt="...">-->
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
+                                <h5 id="services3">Conception design</h5>
+                                <p id="expService3">Explication......</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <!-- <img src="images/code.jpg" class="d-block w-100" alt="...">-->
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 id="services4">Conception d'un système d'informations géographique</h5>
+                                <p id="expService4">Explication......</p>
                             </div>
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
+                        <span id="previous1" class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span id="previous2" class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
+                        <span id="next1" class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span id="next2" class="visually-hidden">Next</span>
                     </button>
                 </div>                            
-            </div>
-            <div class="col-6">
-                <h1 id="myName" class="mt-5 fw-bold hidden"> Bienvenu, welcome chez</h1>
-                <h3 id="myskill1" class="mt-1 fw-bold hidden">3-POINTS</h3>
-                <p id="myskill2" class="text-justify hidden">
-                    Votre parténaire digitale <br>
-                    Notre priorité c'est votre satisfactions.
-                </p>
             </div>
         </div>
     </section>
@@ -156,25 +166,80 @@
             <div class="card card-circle h-100">
                 <div class="card-body d-flex flex-column justify-content-center align-items-center">
                     <div class="row">
-                        <h5 class="card-title text-primary fw-bold d-flex justify-content-center">Les technologies que j’utilise</h5>
+                        <h5 class="card-title text-primary fw-bold d-flex justify-content-center">Nos services sont:</h5>
                     </div>
                     <div class="row">
                         <div class="col g-1 d-flex flex-wrap justify-content-center">
-                            <span class="badge bg-secondary m-1">HTML</span>
-                            <span class="badge bg-secondary m-1">CSS - Bootstrap</span>
-                            <span class="badge bg-secondary m-1">PHP - Symfony</span>
-                            <span class="badge bg-secondary m-1">Java</span>
-                            <span class="badge bg-secondary m-1">Python</span>  
+                            <span class="badge bg-secondary m-1">Fiables</span>
+                            <span class="badge bg-secondary m-1">Accesibles</span>
+                            <span class="badge bg-secondary m-1">Rapides</span>
                         </div>
                     </div>     
-                    <div class="row">
-                        <div class="col g-0 d-flex flex-wrap justify-content-center">
-                            <span class="badge bg-secondary m-1">JavaScript</span>
-                            <span class="badge bg-secondary m-1">React js</span>
-                            <span class="badge bg-secondary m-1">Figma</span>
-                            <span class="badge bg-secondary m-1">Adobe XD</span> 
-                        </div>  
+                </div>
+            </div>
+            <div class="row mt-3 mb-2">
+                <h5 class="card-title text-primary fw-bold d-flex justify-content-center">Jetez un coup d'oeil sur nos travaux:</h5>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card card-circle h-70 overflow-hidden">
+                    <img src="images/projet9.png" class="card-img img-fluid zoom" width="150" alt="My first project">
+                    <div class="card-body">
+                      <h5 class="card-title text-primary fw-bold d-flex justify-content-center">Gestion des clients</h5>
+                      <p class="card-text text-center">C’est une application de bureau conçue pour gérer la clientèle de l’entreprise.</p>
+                      <a href="https://github.com/k-adafi/GestionApp" target="_blank" class="btn btn-outline-primary d-flex justify-content-center">Voir le projet</a>
                     </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card card-circle h-70 overflow-hidden">
+                    <img src="images/projet15.png" class="card-img img-fluid zoom" width="150" alt="My first project">
+                    <div class="card-body">
+                      <h5 class="card-title text-primary fw-bold d-flex justify-content-center">Desing PeaceMobile</h5>
+                      <p class="card-text text-center">Design de l’application mobile sur les notions de droits et de dignité humaine.</p>
+                      <a href="https://xd.adobe.com/view/61aa449f-a18c-4245-b3d4-3d58cb40bf5b-34f9/?fullscreen" target="_blank" class="btn btn-outline-primary d-flex justify-content-center">Voir détail</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card card-circle h-70 overflow-hidden">
+                    <img src="images/projet5.png" class="card-img img-fluid zoom" width="150" alt="My first project">
+                    <div class="card-body">
+                      <h5 class="card-title text-primary fw-bold d-flex justify-content-center">Segmentation d'image</h5>
+                      <p class="card-text text-center">Projet académique sur le traitement et l’analyse d’images.</p>
+                      <a href="https://github.com/k-adafi/Technique_segmentation-croissance-region-" target="_blank" class="btn btn-outline-primary d-flex justify-content-center">Voir le projet</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card card-circle h-70 overflow-hidden">
+                    <img src="images/projet6.png" class="card-img img-fluid zoom" width="150" alt="My first project">
+                    <div class="card-body">
+                      <h5 class="card-title text-primary fw-bold d-flex justify-content-center">Contrainte Image</h5>
+                      <p class="card-text text-center">Projet académique sur le traitement et l’analyse d’images.</p>
+                      <a href="https://github.com/k-adafi/ProjetTerrainPaint" target="_blank" class="btn btn-outline-primary d-flex justify-content-center">Voir le projet</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card card-circle h-70 overflow-hidden">
+                    <img src="images/projet10.png" class="card-img img-fluid zoom" width="150" alt="My first project">
+                    <div class="card-body">
+                      <h5 class="card-title text-primary fw-bold d-flex justify-content-center">Etiquetage d'image</h5>
+                      <p class="card-text text-center">Projet académique sur le traitement et analyse d'image.</p>
+                      <a href="https://github.com/k-adafi/ImageTraitementPy" target="_blank" class="btn btn-outline-primary d-flex justify-content-center">Voir le projet</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card card-circle h-70 overflow-hidden">
+                    <img src="images/projet8.png" class="card-img img-fluid zoom" width="150" alt="My first project">
+                    <div class="card-body">
+                      <h5 class="card-title text-primary fw-bold d-flex justify-content-center">Suivez-moi sur Git Hub</h5>
+                      <p class="card-text text-center">Jetez un coup d’œil et découvrez mes autres projets sur GitHub.</p>
+                      <a href="https://github.com/k-adafi" target="_blank" class="btn btn-outline-primary d-flex justify-content-center">Explorer</a>
+                    </div>
+                  </div>
                 </div>
             </div>            
         </div>
@@ -197,10 +262,24 @@
                     <!-- Repeat the above block for other cards -->
                     <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
                         <div class="card card-circle overflow-hidden">
-                            <img src="images/Jennica.jpg" class="card-img img-fluid zoom" width="200" height="100" alt="Photo 2">
+                            <img src="images/Kadafi.jpg" class="card-img img-fluid zoom rounded-pill" width="150" height="100" alt="Photo 2">
                             <div class="card-body">
-                                <h5 class="card-title">Don H. Rabon</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                <h6 class="card-title d-flex justify-content-center">KADAFI Ben</h6>
+                                <p class="card-text d-flex justify-content-center">Resp.Développement info</p>
+                                <div class="d-flex justify-content-around">
+                                    <a href="https://www.facebook.com/kadafy.man.3/" class="text-decoration-none" alt="Facebook acount KADAFI Ben" ><i class="fab fa-facebook zoom"></i></a>
+                                    <a href="https://www.linkedin.com/in/kadafi-ben-0312a3265/" class="text-decoration-none"><i class="fab fa-linkedin zoom"></i></a>
+                                    <a href="kadafiben196@gmail.com" class="text-decoration-none"><i class="fas fa-envelope zoom"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                        <div class="card card-circle overflow-hidden">
+                            <img src="images/Jennica.jpg" class="card-img img-fluid zoom rounded-pill" width="150" height="100" alt="Photo 2">
+                            <div class="card-body">
+                                <h6 class="card-title d-flex justify-content-center">JENNICA Overmars</h6>
+                                <p class="card-text d-flex justify-content-center">Resp.Syst.Information Géo</p>
                                 <div class="d-flex justify-content-around">
                                     <a href="#" class="text-decoration-none"><i class="fab fa-facebook zoom"></i></a>
                                     <a href="#" class="text-decoration-none"><i class="fab fa-twitter zoom"></i></a>
@@ -211,10 +290,10 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
                         <div class="card card-circle overflow-hidden">
-                            <img src="images/Jennica.jpg" class="card-img img-fluid zoom" width="200" height="100" alt="Photo 2">
+                            <img src="images/Jennica.jpg" class="card-img img-fluid zoom rounded-pill" width="150" height="100" alt="Photo 2">
                             <div class="card-body">
-                                <h5 class="card-title">Don H. Rabon</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                <h6 class="card-title d-flex justify-content-center">MISA Vavy</h6>
+                                <p class="card-text d-flex justify-content-center">Resp. Comminucation</p>
                                 <div class="d-flex justify-content-around">
                                     <a href="#" class="text-decoration-none"><i class="fab fa-facebook zoom"></i></a>
                                     <a href="#" class="text-decoration-none"><i class="fab fa-twitter zoom"></i></a>
@@ -225,24 +304,10 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
                         <div class="card card-circle overflow-hidden">
-                            <img src="images/Jennica.jpg" class="card-img img-fluid zoom" width="200" height="100" alt="Photo 2">
+                            <img src="images/Jennica.jpg" class="card-img img-fluid zoom rounded-pill" width="150" height="100" alt="Photo 2">
                             <div class="card-body">
-                                <h5 class="card-title">Don H. Rabon</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet</p>
-                                <div class="d-flex justify-content-around">
-                                    <a href="#" class="text-decoration-none"><i class="fab fa-facebook zoom"></i></a>
-                                    <a href="#" class="text-decoration-none"><i class="fab fa-twitter zoom"></i></a>
-                                    <a href="#" class="text-decoration-none"><i class="fas fa-envelope zoom"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
-                        <div class="card card-circle overflow-hidden">
-                            <img src="images/Jennica.jpg" class="card-img img-fluid zoom" width="200" height="100" alt="Photo 2">
-                            <div class="card-body">
-                                <h5 class="card-title">Don H. Rabon</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                <h6 class="card-title d-flex justify-content-center">CEDRIC Laza</h6>
+                                <p class="card-text d-flex justify-content-center">Resp.Conception design</p>
                                 <div class="d-flex justify-content-around">
                                     <a href="#" class="text-decoration-none"><i class="fab fa-facebook zoom"></i></a>
                                     <a href="#" class="text-decoration-none"><i class="fab fa-twitter zoom"></i></a>
@@ -302,17 +367,71 @@
             <h4 class="fw-bold">***************************</h4>
         </div>
     </section>
+    <section class="contacts">
+        <div class="bg-dark footer-wrap botom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                            <h4 class="text-white">Nos services</h4>
+                            <div class="row">
+                                <div class="col">
+                                    <ul class="">
+                                        <li class="text-justify"><a class="text-white" href="#">Technologique</a></li>
+                                        <li class="text-justify"><a class="text-white" href="#">Eléctroménagère</a></li>
+                                        <li class="text-justify"><a class="text-white" href="#">Eléctroménagère</a></li>
+                                        <li class="text-justify"><a class="text-white" href="#">Fourniture scolaires</a></li>
+                                        <li class="text-justify"><a class="text-white" href="#">Livres</a></li>
+                                        <li class="text-justify"><a class="text-white" href="#">Technologique</a></li>
+                                        <li class="text-justify"><a class="text-white" href="#">Eléctroménagère</a></li>
+                                    </ul> 
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <h4 class="mb-5 text-white">Ils nous fait confiances</h4>
+                        <div class="btn-list">
+                            <button type="button" class="btn" data-bgcolor="#3b5998" data-color="#ffffff"><i class="fa fa-facebook"></i></button>
+                            <button type="button" class="btn" data-bgcolor="#1da1f2" data-color="#ffffff"><i class="fa fa-twitter"></i></button>
+                            <button type="button" class="btn" data-bgcolor="#007bb5" data-color="#ffffff"><i class="fa fa-linkedin"></i></button>
+                            <button type="button" class="btn" data-bgcolor="#f46f30" data-color="#ffffff"><i class="fa fa-instagram"></i></button>
+                            <button type="button" class="btn" data-bgcolor="#c32361" data-color="#ffffff"><i class="fa fa-youtube"></i></button>
+                            <button type="button" class="btn" data-bgcolor="#3b5998" data-color="#ffffff"><i class="fa fa-facebook"></i></button>
+                            <button type="button" class="btn" data-bgcolor="#1da1f2" data-color="#ffffff"><i class="fa fa-twitter"></i></button>
+                            <button type="button" class="btn" data-bgcolor="#007bb5" data-color="#ffffff"><i class="fa fa-linkedin"></i></button>
+                            <button type="button" class="btn" data-bgcolor="#f46f30" data-color="#ffffff"><i class="fa fa-instagram"></i></button>
+                            <button type="button" class="btn" data-bgcolor="#c32361" data-color="#ffffff"><i class="fa fa-youtube"></i></button>
+                            <button type="button" class="btn" data-bgcolor="#3b5998" data-color="#ffffff"><i class="fa fa-facebook"></i></button>
+                            <button type="button" class="btn" data-bgcolor="#1da1f2" data-color="#ffffff"><i class="fa fa-twitter"></i></button>
+                            <button type="button" class="btn" data-bgcolor="#007bb5" data-color="#ffffff"><i class="fa fa-linkedin"></i></button>
+                            <button type="button" class="btn" data-bgcolor="#f46f30" data-color="#ffffff"><i class="fa fa-instagram"></i></button>
+                            <button type="button" class="btn" data-bgcolor="#c32361" data-color="#ffffff"><i class="fa fa-youtube"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="row pb-5">
+                            <h4 class="mb-15 text-white h4">Suivez-nous sur</h4>
+                            <div class="btn-list">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
-<footer class="bg-primary pt-2 pb-1">
+<footer class="bg-primary pb-1">
     <p class="copyright-text text-light d-flex justify-content-center fw-bold">© Copyright 2024 by 3-POINTS</p>
 </footer>
 
 <!-- Our codes -->
-<script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> 
+    <script src="js/main.js"></script>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+ <!--<script src="js/bootstrap.bundle.js"></script>
+ <script src="js/bootstrap.bundle.min.js"></script>-->

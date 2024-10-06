@@ -41,7 +41,7 @@ window.addEventListener('load', function() {
     document.getElementById('myskill2').addEventListener('mouseout', resumeAnimations);
 });
 
-let logo = document.getElementById("logoP")
+let logoP = document.getElementById("logoP");
 let icon = document.getElementById("icon");
 let body = document.getElementById("body");
 let phasebienvenu = document.getElementById('myName');
@@ -49,10 +49,31 @@ let cards = document.querySelectorAll(".card");
 let buttons = document.querySelectorAll(".btn-outline-primary");
 let navbar = document.querySelector(".navbar");
 let navLinks = document.querySelectorAll(".nav-link");
-let carousel = document.querySelector(".carousel");
-let carouselitem = document.querySelectorAll(".carousel-item");
 let titre_sect = document.querySelector(".titre_sect");
 
+let services1 = document.getElementById("services1");
+let expService1 = document.getElementById("expService1");
+let services2 = document.getElementById("services2");
+let expService2 = document.getElementById("expService2");
+let services3 = document.getElementById("services3");
+let expService3 = document.getElementById("expService3");
+let services4 = document.getElementById("services4");
+let expService4 = document.getElementById("expService4");
+
+let previous1 = document.getElementById("previous1");
+let previous2 = document.getElementById("previous2");
+
+let next1 = document.getElementById("next1");
+let next2 = document.getElementById("next2");
+
+console.log(services1);
+console.log(expService1);
+console.log(services2);
+console.log(expService2);
+console.log(services3);
+console.log(expService3);
+console.log(services4);
+console.log(expService4);
 
 icon.onclick = function() {
     body.classList.toggle("dark-mode");
@@ -62,14 +83,26 @@ icon.onclick = function() {
     buttons.forEach(button => button.classList.toggle("dark-mode"));
     navbar.classList.toggle("dark-mode");
     navLinks.forEach(link => link.classList.toggle("dark-mode"));
-    carousel.classList.toggle("dark-mode");
-    carouselitem.classList.toggle("dark-mode");
+    services1.classList.toggle("dark-mode");
+    expService1.classList.toggle("dark-mode");
+    services2.classList.toggle("dark-mode");
+    expService2.classList.toggle("dark-mode");
+    services3.classList.toggle("dark-mode");
+    expService3.classList.toggle("dark-mode");
+    services4.classList.toggle("dark-mode");
+    expService4.classList.toggle("dark-mode"); 
+
+    previous1.classList.toggle("dark-mode");
+    previous2.classList.toggle("dark-mode");
+    next1.classList.toggle("dark-mode");
+    next2.classList.toggle("dark-mode"); 
+
     if (body.classList.contains("dark-mode")) {
         icon.src = "images/sunny.png";
-        logo.src = "images/logoP1.png";
+        logoP.src = "images/logoP1.png";
     } else {
         icon.src = "images/half-moon.png";
-        logo.src = "images/logoP.png";
+        logoP.src = "images/logoP.png";
     }
 }
 
